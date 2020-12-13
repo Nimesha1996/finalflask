@@ -33,7 +33,7 @@ def add_pet(body, id, name, category, photo_urls, tags, status):  # noqa: E501
     if connexion.request.is_json:
         body = Pet.from_dict(connexion.request.get_json())  # noqa: E501
     if connexion.request.is_json:
-        category = .from_dict(connexion.request.get_json())  # noqa: E501
+        category = Category.from_dict(connexion.request.get_json())  # noqa: E501
     if connexion.request.is_json:
         tags = [Tag.from_dict(d) for d in connexion.request.get_json()]  # noqa: E501
     return 'do some magic!'
@@ -118,7 +118,7 @@ def update_pet(body, id, name, category, photo_urls, tags, status):  # noqa: E50
     if connexion.request.is_json:
         body = Pet.from_dict(connexion.request.get_json())  # noqa: E501
     if connexion.request.is_json:
-        category = .from_dict(connexion.request.get_json())  # noqa: E501
+        category = Category.from_dict(connexion.request.get_json())  # noqa: E501
     if connexion.request.is_json:
         tags = [Tag.from_dict(d) for d in connexion.request.get_json()]  # noqa: E501
     return 'do some magic!'

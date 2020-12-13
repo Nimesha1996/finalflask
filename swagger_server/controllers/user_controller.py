@@ -103,7 +103,7 @@ def logout_user():  # noqa: E501
     return 'do some magic!'
 
 
-def update_user(username, body=None, id=None, username=None, first_name=None, last_name=None, email=None, password=None, phone=None, user_status=None):  # noqa: E501
+def update_user(body=None, id=None, username=None, first_name=None, last_name=None, email=None, password=None, phone=None, user_status=None):  # noqa: E501
     """Update user
 
     This can only be done by the logged in user. # noqa: E501
